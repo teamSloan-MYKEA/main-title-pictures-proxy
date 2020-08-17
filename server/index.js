@@ -1,7 +1,10 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 2999;
+
+app.use(express.static('../'));
 
 app.get('/', (req, res) => {
   res.send('Hello from server!');
