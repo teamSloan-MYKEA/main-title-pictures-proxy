@@ -8,5 +8,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Proxy server listening at http://localhost:${port}`)
+  console.log(`Proxy server listening at http://localhost:${port}`);
 });
