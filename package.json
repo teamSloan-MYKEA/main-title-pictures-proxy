@@ -1,6 +1,6 @@
 {
   "name": "mykea-proxy-server",
-  "description": "> Project description",
+  "description": "An IKEA clone",
   "author": "zach mansell",
   "license": "ISC",
   "engines": {
