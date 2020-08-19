@@ -2,28 +2,59 @@
 <html lang="en-US">
 
 <head>
+  <title>MYKEA</title>
   <meta charset="utf-8">
   <meta name="author" content="Zach Mansell">
   <meta name="description" content="An IKEA product page clone.">
-  <title>MYKEA</title>
+  <style>
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    #container {
+      display: grid;
+      margin-top: 100px;
+      margin-left: 200px;
+      grid-column-gap: 1.25rem;
+      grid-template-columns: repeat(13, minmax(0, 1fr));
+    }
+
+    #main-title-pictures {
+      grid-row: 3;
+      grid-column-end: span 8;
+    }
+
+    #addtobag {}
+
+    #similar-products {
+      grid-row: 4;
+      grid-column-end: span 8;
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Product pictures -->
-  <div id="main-title-pictures"></div>
-  <script src="http://localhost:3000/public/bundle.js"></script>
+  <header>
+    <img src="https://mykea-main-title-pictures.s3.us-east-2.amazonaws.com/ikea-header.png" />
+  </header>
+  <div id="container">
+    <!-- Product pictures -->
+    <div id="main-title-pictures"></div>
+    <script src="http://localhost:3000/public/bundle.js"></script>
 
-  <!-- Add to bag -->
-  <div id="addtobag"></div>
-  <script src="http://localhost:3003/public/bundle.js"></script>
+    <!-- Add to bag -->
+    <!-- <div id="addtobag"></div>
+    <script src="http://localhost:3003/public/bundle.js"></script>
+  </div> -->
 
-  <!-- Reviews -->
-  <div id="reviews"></div>
-  <!-- <script src="http://localhost:3003/public/bundle.js"></script> -->
+    <!-- Reviews -->
+    <div id="app"></div>
+    <script src="http://localhost:3002/public/bundle.js"></script>
 
-  <!-- Similar products -->
-  <div id="similar-products"></div>
-  <script src="http://localhost:3001/public/bundle.js"></script>
+    <!-- Similar products -->
+    <div id="similar-products"></div>
+    <script src="http://localhost:3001/public/bundle.js"></script>
 
 </body>
 
