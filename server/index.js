@@ -11,11 +11,11 @@ app.use(cors());
 
 app.use('/:id/pictures/:id', createProxyMiddleware({ target: 'http://localhost:3000/' }));
 app.use('/:id/similar/:id', createProxyMiddleware({ target: 'http://localhost:3001/' }));
-// app.use('/:id', createProxyMiddleware({ target: 'http://localhost:3003/' }));
+app.use('/:id/bag/:id', createProxyMiddleware({ target: 'http://localhost:3003/' }));
 
-// app.get('/:id/api/:id', (req, res) => {
-//   res.send('Hello from server!');
-// });
+app.get('/', (req, res) => {
+  res.send('Hello from MYKEA! Please go to a product endpoint.');
+});
 
 app.listen(port, () => {
   console.log(`Proxy server listening at http://localhost:${port}`);
