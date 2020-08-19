@@ -7,7 +7,18 @@
   <meta name="author" content="Zach Mansell">
   <meta name="description" content="An IKEA product page clone.">
   <style>
+    #container {
+      display: flex;
+      justify-content: space-between;
+    }
 
+    #main-title-pictures {
+      flex: 0 0 80%
+    }
+
+    #addtobag {
+      flex: 0 0 20%
+    }
   </style>
 </head>
 
@@ -20,15 +31,15 @@
     <!-- Add to bag -->
     <div id="addtobag"></div>
     <script src="http://localhost:3003/public/bundle.js"></script>
-
-    <!-- Reviews -->
-    <div id="reviews"></div>
-    <!-- <script src="http://localhost:3003/public/bundle.js"></script> -->
-
-    <!-- Similar products -->
-    <div id="similar-products"></div>
-    <script src="http://localhost:3001/public/bundle.js"></script>
   </div>
+
+  <!-- Reviews -->
+  <div id="reviews"></div>
+  <!-- <script src="http://localhost:3003/public/bundle.js"></script> -->
+
+  <!-- Similar products -->
+  <div id="similar-products"></div>
+  <script src="http://localhost:3001/public/bundle.js"></script>
 
 </body>
 
