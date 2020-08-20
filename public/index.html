@@ -19,7 +19,7 @@
       margin-top: 100px;
       margin-left: 200px;
       grid-column-gap: 1.25rem;
-      grid-template-columns: repeat(13, minmax(0, 1fr));
+      grid-template-columns: repeat(12, minmax(0, 1fr));
       padding: 0 2.5rem 0 1.25rem;
     }
 
@@ -28,13 +28,21 @@
       grid-column-end: span 8;
     }
 
-    #addtobag {
+    .addtobag {
       padding: 0 2.5rem;
       grid-column-start: 9;
       grid-column-end: span 4;
       grid-row-start: 3;
       grid-row-end: span 2;
       margin: 0;
+      /* position: -webkit-sticky;
+      position: sticky;
+      top: 0; */
+    }
+
+    .addtobag div {
+      position: sticky;
+      top: 1.25rem;
     }
 
     #similar-products {
@@ -54,20 +62,22 @@
   <script src="//unpkg.com/styled-components@4.0.1/dist/styled-components.min.js"></script>
   <div id="container">
     <!-- Product pictures -->
-    <div id="main-title-pictures"></div>
+    <section id="main-title-pictures"></section>
     <script src="http://localhost:3000/public/bundle.js"></script>
 
     <!-- Add to bag -->
-    <div id="addtobag"></div>
+    <section class="addtobag">
+      <div id="addtobag"></div>
+    </section>
     <script src="http://localhost:3003/public/bundle.js"></script>
   </div>
 
   <!-- Reviews -->
-  <div id="reviews"></div>
+  <section id="reviews"></section>
   <script src="http://localhost:3002/public/bundle.js"></script>
 
   <!-- Similar products -->
-  <div id="similar-products"></div>
+  <section id="similar-products"></section>
   <script src="http://localhost:3001/public/bundle.js"></script>
 
 </body>
