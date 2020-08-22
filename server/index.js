@@ -11,9 +11,9 @@ app.use('/:id', express.static(path.join(__dirname, '../', '/public')));
 app.use(cors());
 
 app.use('/:id/pictures/:id', createProxyMiddleware({ target: 'http://18.190.28.33:3000/' }));
-app.use('/:id/similar/:id', createProxyMiddleware({ target: 'http://localhost:3001/' }));
+app.use('/:id/similar/:id', createProxyMiddleware({ target: 'http://52.207.78.191/' }));
 app.use('/:id/bag/:id', createProxyMiddleware({ target: 'http://localhost:3003/' }));
-app.use('/:id/reviews/:id', createProxyMiddleware({ target: 'http://localhost:3002/' }));
+app.use('/:id/reviews/:id', createProxyMiddleware({ target: 'http://18.223.24.49:3002/' }));
 
 app.get('/', (req, res) => {
   res.send('Hello from MYKEA! Please go to a product endpoint.');
