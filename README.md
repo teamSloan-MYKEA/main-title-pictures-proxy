@@ -1,13 +1,13 @@
-# MYKEA
+# Project Name
 
-> IKEA clone
+> Project description
 
 ## Related Projects
 
-  - https://github.com/hrr47-fec-omalley/reviews-service
-  - https://github.com/hrr47-fec-omalley/similar-products-service
-  - https://github.com/hrr47-fec-omalley/add-to-bag-service
-  - https://github.com/hrr47-fec-omalley/main-title-pictures-service
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
+  - https://github.com/teamName/repo
 
 ## Table of Contents
 

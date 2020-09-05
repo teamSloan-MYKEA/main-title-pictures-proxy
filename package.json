@@ -1,38 +1,33 @@
 {
-  "name": "mykea-proxy-server",
-  "description": "An IKEA clone",
-  "author": "zach mansell",
+  "name": "similar-products-proxy",
+  "description": "> Project description",
+  "author": "",
   "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
-    "start": "nodemon server/index.js"
+    "server": "nodemon ./server/server.js --watch"
   },
   "dependencies": {
+    "@newrelic/native-metrics": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-http-proxy": "^1.6.2",
-    "http-proxy-middleware": "^1.0.5",
+    "newrelic": "^6.13.0",
     "nodemon": "^2.0.4"
   },
   "devDependencies": {
-    "eslint": "^7.2.0",
-    "eslint-config-airbnb": "^18.2.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.0.0"
+    "http-proxy-middleware": "^1.0.5"
   },
   "version": "1.0.0",
-  "main": "index.js",
+  "main": ".eslintrc.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hrr47-fec-omalley/main-title-pictures-proxy.git"
+    "url": "git+https://github.com/hrr47-fec-omalley/similar-products-proxy.git"
   },
   "bugs": {
-    "url": "https://github.com/hrr47-fec-omalley/main-title-pictures-proxy/issues"
+    "url": "https://github.com/hrr47-fec-omalley/similar-products-proxy/issues"
   },
-  "homepage": "https://github.com/hrr47-fec-omalley/main-title-pictures-proxy#readme"
+  "homepage": "https://github.com/hrr47-fec-omalley/similar-products-proxy#readme"
 }

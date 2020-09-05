@@ -1,0 +1,39 @@
+config:
+  target: "http://localhost:2999"
+  phases:
+    - duration: 60
+      arrivalRate: 1
+      maxVusers: 10
+      name: Warm up
+    - duration: 60
+      arrivalRate: 150
+      maxVusers: 1000
+      name: Ramp up load
+    - duration: 60
+      arrivalRate: 350
+      maxVusers: 1000
+      name: Sustained load
+  payload:
+    # Load productIds from an external CSV file and make them available
+    # to virtual user scenarios as variable "id":
+    path: "productIds.csv"
+    fields:
+      - "id"
+scenarios:
+  # We define one scenario:
+  - name: "View products"
+    flow:
+      - get:
+          url: "/{{ id }} "
+      - think: 3
+      # Add product to database:
+      - post:
+          url: "/"
+          form:
+            description: "'test description'"
+            picture1: "'testpicture1'"
+            picture2: "'testpicture2'"
+            picture3: "'testpicture3'"
+            picture4: "'testpicture4'"
+            picture5: "'testpicture5'"
+            picture6: "'testpicture6'"
