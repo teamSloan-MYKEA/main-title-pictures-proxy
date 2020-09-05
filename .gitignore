@@ -23,4 +23,5 @@ coverage
 # Compiled Dirs (http://nodejs.org/api/addons.html)
 build/
 dist/
-
+newrelic.js
+public/loaderio-a2aa9d069d95b507c07ccb6551bf0f0a.html
