@@ -1,6 +1,6 @@
 # Project Name
 
-> Project description
+> Head proxy for stress testing the Main Title Pictures Service
 
 ## Related Projects
 
